@@ -8,14 +8,14 @@ function Navbar() {
     setNav(!nav);
   };
   return (
-    <div className="flex justify-between items-center p-4 bg-gray-300 shadow-xl w-full z-[100] max-w-[1240px] mx-auto">
+    <div className="flex justify-between items-center p-4 border-b border-b-black w-full z-[100] max-w-[1240px] mx-auto">
       <div>
         <a href="/">
           <h1 className="font-bold text-5xl cursor-pointer">Renny</h1>
         </a>
       </div>
 
-      <ul className="hidden space-x-5 text-xl font-bold md:flex sm:space-x-3">
+      <ul className="hidden space-x-5 gap-3 text-xl font-bold md:flex sm:space-x-3">
         <a href="/" className="text-2xl font-base cursor-pointer">
           Home
         </a>
