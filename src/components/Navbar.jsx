@@ -8,14 +8,14 @@ function Navbar() {
     setNav(!nav);
   };
   return (
-    <div className="flex justify-between items-center my-5 mx-auto p-5 border-b border-b-gray w-full z-[100] max-w-[1240px]">
+    <div className="flex justify-between items-center p-4 bg-gray-300 shadow-xl w-full z-[100] max-w-[1240px] mx-auto">
       <div>
         <a href="/">
           <h1 className="font-bold text-5xl cursor-pointer">Renny</h1>
         </a>
       </div>
 
-      <ul className="flex justify-between items-center space-x-7 gap-3">
+      <ul className="hidden space-x-5 text-xl font-bold md:flex sm:space-x-3">
         <a href="/" className="text-2xl font-base cursor-pointer">
           Home
         </a>
@@ -46,24 +46,16 @@ function Navbar() {
         </h1>
         <ul className="p-4 pt-12">
           <li className="p-4 text-3xl font-bold border-b border-gray-700 cursor-pointer">
-            <a href="/home" smooth={true} duration={500}>
-              Home
-            </a>
+            <a href="/">Home</a>
           </li>
           <li className="p-4 text-3xl font-bold border-b border-gray-700 cursor-pointer">
-            <a href="/skills" smooth={true} duration={500}>
-              Skills
-            </a>
+            <a href="/about">About</a>
           </li>
           <li className="p-4 text-3xl font-bold border-b border-gray-700 cursor-pointer">
-            <a href="/portfolio" smooth={true} duration={500}>
-              Portfolio
-            </a>
+            <a href="/skills">Skills</a>
           </li>
           <li className="p-4 text-3xl font-bold border-b border-gray-700 cursor-pointer">
-            <a href="/contact" smooth={true} duration={500}>
-              Contact
-            </a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </div>
